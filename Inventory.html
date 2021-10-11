@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Invoice & Orders</title>
+        <title>Inventory</title>
         <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" />
         <link href="css/styles.css" rel="stylesheet" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous"></script>
@@ -45,9 +45,9 @@
                             <div class="sb-sidenav-menu-heading">Core</div>
                             <a class="nav-link" href="index.html">
                                 <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
-                                Dashboard
+                                Dashboards
                             </a>
-                            <div class="sb-sidenav-menu-heading"> ASOPS Interface</div>
+                                <div class="sb-sidenav-menu-heading"> ASOPS Interface</div>
                             </a>
                             <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
                                 <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
@@ -96,31 +96,25 @@
                                 <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
                                 Charts
                             </a>
-                            <a class="nav-link" href="tables.html">
+                            <a class="nav-link" href="orders.html">
                                 <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
                                 Tables
                             </a>
                         </div>
-                       <nav>
-                           <b><div class="sb-sidenav-menu-heading">ASOPS Reports</div></b>
-                           <a class="nav-link" href="charts.html"></a>
-                           <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
-                                Reports
-                       </nav>
                     </div>
                     <div class="sb-sidenav-footer">
                         <div class="small">Logged in as:</div>
-                        ASOPS <!--username-->
+                        ASOPS
                     </div>
                 </nav>
             </div>
             <div id="layoutSidenav_content">
-                <!--main contents of the invoice & order page-->
+                <!--The main content of the order page-->
                 <main>
                     <div class="container-fluid px-4">
-                        <h1 class="mt-4">Invoice & Orders</h1>
+                        <h1 class="mt-4">Inventory</h1>
                         <ol class="breadcrumb mb-4">
-                            <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li> 
+                            <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
                             <li class="breadcrumb-item active">Customer Relations</li>
                             <li class="breadcrumb-item"><a href="invoice_order.html">Invoice & Orders</a></li>
                             <li class="breadcrumb-item"><a href="orders.html">Orders</a></li>
@@ -128,41 +122,139 @@
                         <div class="card mb-4">
                             <div class="card-body">
                                 <!--Intructions-->
-                                Please fill in the Invoice & Order form to upload an order to ASOPS. If you need assistants please speak with your Line Manager.
+                                Please use the Search bar to find a Customer in ASOPS. If you need assistants please speak with your Line Manager.
                                 <a target="_blank" href="#">Who is my Line Manager</a> <!--link to sharepoint-->
                             </div>
-                            <br/>
-                        <div>
-                            <div class="card mb-4">
-                                <div class="card-header">
-                                    Invoice & Order Form
-                                </div>
-                                <div class="card-body">
-                                    <table>
-                            <form>
-                            </div>
-                            <a class="btn btn-document-button" href="index.html">Upload Document</a> <!--Change href to the next page of the order process-->
                         </div>
-                                 <div class="form-floating mb-3">
-                                    <input class="form-control" id="inputname" type="name" placeholder="name" />
-                                    <label for="inputname">Point of Contact</label>
-                                </div>
-                                <div class="form-floating mb-3">
-                                    <input class="form-control" id="inputaddress" type="address" placeholder="address" />
-                                    <label for="inputaddress">Invoice Address</label>
-                                </div>
-                                <div class="form-floating mb-3">
-                                    <input class="form-control" id="inputaddress" type="address" placeholder="address" />
-                                    <label for="inputaddress">Invoice Address</label>
-                                </div>
-                                    <a class="btn btn-process-button" href="index.html">Process</a> <!--Change href to the next page of the order process-->
-                                </div>
-                                <br>
+                        <div class="card mb-4">
+                            <div class="card-header">
+                                <i class="fas fa-table me-1"></i>
+                                Inventory
                             </div>
-                                <a class="btn btn-proforma-button" href="index.html">Proforma</a> <!--Change href to the next page of the order process-->
-                            </div>
-                            </form>
-                        </div>
+                            <div class="card-body">
+                                <table id="datatablesSimple">
+                                    <thead>
+                                        <tr>
+                                            <th>Products</th>
+                                            <th>Stock Balance</th>
+                                            <th>Pending Stock</th>
+                                            <th>Allocalled Stock</th>
+                                            <th>Damaged on Receipt</th>
+                                        </tr>
+                                    </thead>
+                                    <tfoot>
+                                        <tr>
+                                            <th>Products</th>
+                                            <th>Stock Avaialbe</th>
+                                            <th>Pending Stock</th>
+                                            <th>Allocalled Stock</th>
+                                            <th>Damaged on Receipt</th>
+                                        </tr>
+                                    </tfoot>
+                                    <tbody>
+                                        <tr>
+                                            <td>Back to Black</td>
+                                            <td>280</td>
+                                            <td>5</td>
+                                            <td>40</td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr>
+                                            <td>SSP</td>
+                                            <td>450</td>
+                                            <td>7</td>
+                                            <td>20</td>
+                                            <td>3</td>
+                                        </tr>
+                                        <tr>
+                                            <td>BCS</td>
+                                            <td>750</td>
+                                            <td>3</td>
+                                            <td>2</td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr>
+                                            <td>EasyJoint</td>
+                                            <td>1008</td>
+                                            <td>100</td>
+                                            <td>400</td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr>
+                                            <td>EasyGrout</td>
+                                            <td>3000</td>
+                                            <td>10</td>
+                                            <td>900</td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Back to Black</td>
+                                            <td>280</td>
+                                            <td>5</td>
+                                            <td>40</td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr>
+                                            <td>SSP</td>
+                                            <td>450</td>
+                                            <td>7</td>
+                                            <td>20</td>
+                                            <td>3</td>
+                                        </tr>
+                                        <tr>
+                                            <td>BCS</td>
+                                            <td>750</td>
+                                            <td>3</td>
+                                            <td>2</td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr>
+                                            <td>EasyJoint</td>
+                                            <td>1008</td>
+                                            <td>100</td>
+                                            <td>400</td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr>
+                                            <td>EasyGrout</td>
+                                            <td>3000</td>
+                                            <td>10</td>
+                                            <td>900</td>
+                                            <td>0</td>
+                                        </tr>
+                                        <td>Back to Black</td>
+                                            <td>280</td>
+                                            <td>5</td>
+                                            <td>40</td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr>
+                                            <td>SSP</td>
+                                            <td>450</td>
+                                            <td>7</td>
+                                            <td>20</td>
+                                            <td>3</td>
+                                        </tr>
+                                        <tr>
+                                            <td>BCS</td>
+                                            <td>750</td>
+                                            <td>3</td>
+                                            <td>2</td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr>
+                                            <td>EasyJoint</td>
+                                            <td>1008</td>
+                                            <td>100</td>
+                                            <td>400</td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr>
+                                            <td>EasyGrout</td>
+                                            <td>3000</td>
+                                            <td>10</td>
+                                            <td>900</td>
+                                            <td>0</td>
                                     </tbody>
                                 </table>
                             </div>

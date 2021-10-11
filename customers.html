@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Orders</title>
+        <title>Customers</title>
         <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" />
         <link href="css/styles.css" rel="stylesheet" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous"></script>
@@ -112,7 +112,7 @@
                 <!--The main content of the order page-->
                 <main>
                     <div class="container-fluid px-4">
-                        <h1 class="mt-4">Orders</h1>
+                        <h1 class="mt-4">Customers</h1>
                         <ol class="breadcrumb mb-4">
                             <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
                             <li class="breadcrumb-item active">Customer Relations</li>
@@ -123,263 +123,201 @@
                         <div class="card mb-4">
                             <div class="card-body">
                                 <!--Intructions-->
-                                Please use the Search bar to find an Order in ASOPS. If you need assistants please speak with your Line Manager.
+                                Please use the Search bar to find a Customer in ASOPS. If you need assistants please speak with your Line Manager.
                                 <a target="_blank" href="#">Who is my Line Manager</a> <!--link to sharepoint-->
                             </div>
                         </div>
                         <div class="card mb-4">
                             <div class="card-header">
                                 <i class="fas fa-table me-1"></i>
-                                Orders
+                                Customers
                             </div>
                             <div class="card-body">
                                 <table id="datatablesSimple">
                                     <thead>
                                         <tr>
-                                            <th>Order Number</th>
+                                            <th>Customers</th>
                                             <th>Sales Rep</th>
-                                            <th>Account</th>
-                                            <th>Address</th>
-                                            <th>Priorty</th>
-                                            <th>Dispatch Date</th>
-                                            <th>ETA Delivery Date</th>
+                                            <th>Orders</th>
+                                            <th>Returns</th>
+                                            <th>Cancelled Orders</th>
+                                            <th>Invoices</th>
+                                            <th>POS</th>
                                         </tr>
                                     </thead>
                                     <tfoot>
                                         <tr>
-                                            <th>Order Number</th>
+                                            <th>Customers</th>
                                             <th>Sales Rep</th>
-                                            <th>Account</th>
-                                            <th>Address</th>
-                                            <th>Priorty</th>
-                                            <th>Dispatch Date</th>
-                                            <th>ETA Delivery Date</th>
+                                            <th>Orders</th>
+                                            <th>Returns</th>
+                                            <th>Cancelled Orders</th>
+                                            <th>Invoices</th>
+                                            <th>POS</th>
                                         </tr>
                                     </tfoot>
                                     <tbody>
                                         <tr>
-                                            <td>1234567</td>
+                                            <td>Buildbase</td>
                                             <td>Anton</td>
-                                            <td>Buildbase</td>
-                                            <td>Edinburgh</td>
+                                            <td>1234567</td>
+                                            <td>3</td>
                                             <td>1</td>
-                                            <td>04/10/2021</td>
-                                            <td>07/10/2021</td>
+                                            <td>2345678</td>
+                                            <td>5</td>
                                         </tr>
                                         <tr>
-                                            <td>1234567</td>
-                                            <td>Lee</td>
                                             <td>Travis Perkins</td>
-                                            <td>Suffolk</td>
-                                            <td>2</td>
-                                            <td>07/10/2021</td>
-                                            <td>13/10/2021</td>
+                                            <td>Lee</td>
+                                            <td>1234567</td>
+                                            <td>3</td>
+                                            <td>1</td>
+                                            <td>2345678</td>
+                                            <td>5</td>
                                         </tr>
                                         <tr>
-                                            <td>1234567</td>
-                                            <td>Lewis</td>
                                             <td>J T Dove</td>
-                                            <td>Norfolk</td>
+                                            <td>Lewis</td>
+                                            <td>1234567</td>
+                                            <td>1</td>
+                                            <td>12</td>
+                                            <td>2345678</td>
                                             <td>2</td>
-                                            <td>14/10/2021</td>
-                                            <td>17/10/2021</td>
                                         </tr>
                                         <tr>
-                                            <td>1234567</td>
-                                            <td>Sophy</td>
                                             <td>J T Atkinson</td>
-                                            <td>Sudbury</td>
-                                            <td>1</td>
-                                            <td>21/10/2021</td>
-                                            <td>24/10/2021</td>
-                                        </tr>
-                                        <tr>
+                                            <td>Sophy</td>
                                             <td>1234567</td>
-                                            <td>Craig</td>
-                                            <td>Buildbase</td>
-                                            <td>Scotland</td>
                                             <td>2</td>
-                                            <td>23/10/2021</td>
-                                            <td>25/10/2021</td>
+                                            <td>3</td>
+                                            <td>2345678</td>
+                                            <td>7</td>
                                         </tr>
                                         <tr>
-                                            <td>1234567</td>
+                                            <td>Buildbase</td>
                                             <td>Craig</td>
+                                            <td>1234567</td>
+                                            <td>4</td>
+                                            <td>7</td>
+                                            <td>2345678</td>
+                                            <td>5</td>
+                                        </tr>
+                                        <tr>
                                             <td>J T Dove</td>
-                                            <td>Scotland</td>
-                                            <td>2</td>
-                                            <td>23/10/2021</td>
-                                            <td>25/10/2021</td>
+                                            <td>Craig</td>
+                                            <td>1234567</td>
+                                            <td>3</td>
+                                            <td>4</td>
+                                            <td>2345678</td>
+                                            <td>13</td>
                                         </tr>
                                         <tr>
-                                            <td>1234567</td>
+                                            <td>decco</td>
                                             <td>Rebecca</td>
-                                            <td>Decco</td>
-                                            <td>Midlands</td>
-                                            <td>2</td>
-                                            <td>27/10/2021</td>
-                                            <td>30/10/2021</td>
-                                        </tr>
-                                        <tr>
                                             <td>1234567</td>
-                                            <td>Lewis</td>
-                                            <td>Buildbase</td>
-                                            <td>Stowmarket</td>
+                                            <td>3</td>
                                             <td>1</td>
-                                            <td>30/10/2021</td>
-                                            <td>31/10/2021</td>
+                                            <td>2345678</td>
+                                            <td>5</td>
                                         </tr>
                                         <tr>
+                                            <td>Buildbase</td>
+                                            <td>Lewis</td>
                                             <td>1234567</td>
-                                            <td>Rebecca</td>
+                                            <td>16</td>
+                                            <td>5</td>
+                                            <td>2345678</td>
+                                            <td>9</td>
+                                        </tr>
+                                        <tr>
                                             <td>Decco</td>
-                                            <td>Midlands</td>
+                                            <td>1234567</td>
+                                            <td>1234567</td>
+                                            <td>1</td>
                                             <td>2</td>
-                                            <td>02/11/2021</td>
-                                            <td>05/11/2021</td>
+                                            <td>2345678</td>
+                                            <td>23</td>
                                         </tr>
                                         <tr>
-                                            <td>1234567</td>
+                                            <td>Buildbase</td>
                                             <td>Anton</td>
-                                            <td>Buildbase</td>
-                                            <td>Edinburgh</td>
+                                            <td>1234567</td>
+                                            <td>3</td>
                                             <td>1</td>
-                                            <td>04/11/2021</td>
-                                            <td>07/11/2021</td>
+                                            <td>2345678</td>
+                                            <td>5</td>
                                         </tr>
                                         <tr>
-                                            <td>1234567</td>
-                                            <td>Lee</td>
                                             <td>Travis Perkins</td>
-                                            <td>Suffolk</td>
-                                            <td>2</td>
-                                            <td>07/11/2021</td>
-                                            <td>13/11/2021</td>
-                                        </tr>
-                                        <tr>
+                                            <td>Lee</td>
                                             <td>1234567</td>
-                                            <td>Lewis</td>
-                                            <td>J T Dove</td>
-                                            <td>Norfolk</td>
-                                            <td>2</td>
-                                            <td>14/11/2021</td>
-                                            <td>17/11/2021</td>
-                                        </tr>
-                                        <tr>
-                                            <td>1234567</td>
-                                            <td>Sophy</td>
-                                            <td>J T Atkinson</td>
-                                            <td>Sudbury</td>
+                                            <td>3</td>
                                             <td>1</td>
-                                            <td>21/11/2021</td>
-                                            <td>24/11/2021</td>
+                                            <td>2345678</td>
+                                            <td>5</td>
                                         </tr>
                                         <tr>
-                                            <td>1234567</td>
-                                            <td>Craig</td>
-                                            <td>Buildbase</td>
-                                            <td>Scotland</td>
-                                            <td>2</td>
-                                            <td>23/11/2021</td>
-                                            <td>25/11/2021</td>
-                                        </tr>
-                                        <tr>
-                                            <td>1234567</td>
-                                            <td>Craig</td>
                                             <td>J T Dove</td>
-                                            <td>Scotland</td>
+                                            <td>Lewis</td>
+                                            <td>1234567</td>
+                                            <td>1</td>
+                                            <td>12</td>
+                                            <td>2345678</td>
                                             <td>2</td>
-                                            <td>23/11/2021</td>
-                                            <td>25/11/2021</td>
                                         </tr>
                                         <tr>
+                                            <td>J T Atkinson</td>
+                                            <td>Sophy</td>
                                             <td>1234567</td>
+                                            <td>2</td>
+                                            <td>3</td>
+                                            <td>2345678</td>
+                                            <td>7</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Buildbase</td>
+                                            <td>Craig</td>
+                                            <td>1234567</td>
+                                            <td>4</td>
+                                            <td>7</td>
+                                            <td>2345678</td>
+                                            <td>5</td>
+                                        </tr>
+                                        <tr>
+                                            <td>J T Dove</td>
+                                            <td>Craig</td>
+                                            <td>1234567</td>
+                                            <td>3</td>
+                                            <td>4</td>
+                                            <td>2345678</td>
+                                            <td>13</td>
+                                        </tr>
+                                        <tr>
+                                            <td>decco</td>
                                             <td>Rebecca</td>
-                                            <td>Decco</td>
-                                            <td>Midlands</td>
-                                            <td>2</td>
-                                            <td>02/11/2021</td>
-                                            <td>05/11/2021</td>
-                                        </tr>
-                                        <tr>
                                             <td>1234567</td>
-                                            <td>Anton</td>
-                                            <td>Buildbase</td>
-                                            <td>Edinburgh</td>
+                                            <td>3</td>
                                             <td>1</td>
-                                            <td>04/11/2021</td>
-                                            <td>07/11/2021</td>
+                                            <td>2345678</td>
+                                            <td>5</td>
                                         </tr>
                                         <tr>
-                                            <td>1234567</td>
-                                            <td>Lee</td>
-                                            <td>Travis Perkins</td>
-                                            <td>Suffolk</td>
-                                            <td>2</td>
-                                            <td>07/11/2021</td>
-                                            <td>13/11/2021</td>
-                                        </tr>
-                                        <tr>
-                                            <td>1234567</td>
+                                            <td>Buildbase</td>
                                             <td>Lewis</td>
-                                            <td>J T Dove</td>
-                                            <td>Norfolk</td>
-                                            <td>2</td>
-                                            <td>14/11/2021</td>
-                                            <td>17/11/2021</td>
+                                            <td>1234567</td>
+                                            <td>16</td>
+                                            <td>5</td>
+                                            <td>2345678</td>
+                                            <td>9</td>
                                         </tr>
                                         <tr>
+                                            <td>Decco</td>
                                             <td>1234567</td>
-                                            <td>Sophy</td>
-                                            <td>J T Atkinson</td>
-                                            <td>Sudbury</td>
+                                            <td>1234567</td>
                                             <td>1</td>
-                                            <td>21/11/2021</td>
-                                            <td>24/11/2021</td>
-                                        </tr>
-                                        <tr>
-                                            <td>1234567</td>
-                                            <td>Craig</td>
-                                            <td>Buildbase</td>
-                                            <td>Scotland</td>
                                             <td>2</td>
-                                            <td>23/11/2021</td>
-                                            <td>25/11/2021</td>
-                                        </tr>
-                                        <tr>
-                                            <td>1234567</td>
-                                            <td>Craig</td>
-                                            <td>J T Dove</td>
-                                            <td>Scotland</td>
-                                            <td>2</td>
-                                            <td>23/11/2021</td>
-                                            <td>25/11/2021</td>
-                                        </tr>
-                                        <tr>
-                                            <td>1234567</td>
-                                            <td>Craig</td>
-                                            <td>Buildbase</td>
-                                            <td>Scotland</td>
-                                            <td>2</td>
-                                            <td>23/11/2021</td>
-                                            <td>25/11/2021</td>
-                                        </tr>
-                                        <tr>
-                                            <td>1234567</td>
-                                            <td>Craig</td>
-                                            <td>J T Dove</td>
-                                            <td>Scotland</td>
-                                            <td>2</td>
-                                            <td>23/11/2021</td>
-                                            <td>25/11/2021</td>
-                                        </tr>
-                                            <td>1234567</td>
-                                            <td>Craig</td>
-                                            <td>Buildbase</td>
-                                            <td>Scotland</td>
-                                            <td>2</td>
-                                            <td>23/11/2021</td>
-                                            <td>25/11/2021</td>
+                                            <td>2345678</td>
+                                            <td>23</td>
                                         </tr>
                                     </tbody>
                                 </table>
