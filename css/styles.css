@@ -3044,6 +3044,57 @@ textarea.form-control-lg {
   color: black;
 }
 
+.btn-file-upload
+body{
+  background-color: #0d6efd;
+  padding: 0%;
+  margin: 0%;
+}
+.btn-file-upload
+input [type="file"]{
+  display: none;
+  
+}
+
+
+.btn-file-upload
+Button {
+  padding: 5px 40px;
+  color: #fff;
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+  border-radius: 5px;
+  Border: 10px;
+  position: relative;
+  left: 1268px;
+  bottom:5px;
+
+}
+
+.btn-file-upload:hover {
+  color: #fff;
+  background-color: #0b5ed7;
+  border-color: #0e56a8;
+  color: black;
+
+}
+
+.btn-file-upload
+label{
+  color: #fff;
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+  Border: 10px;
+  position: absolute;
+  margin: auto;
+  top: 0%;
+  left: 1268px;
+  bottom:5px;
+  Left: 0px;
+  right: 0%;
+  display: flex;
+  
+}
 .btn-document-button {
   color: #fff;
   background-color: #0d6efd;
